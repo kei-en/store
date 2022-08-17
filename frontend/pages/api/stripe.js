@@ -10,17 +10,22 @@ export default async function handler(req, res) {
                 mode: 'payment',
                 payment_method_types: ['card'],
                 shipping_address_collection: {
-                    allowed_countries: ['US', 'CA']
+                    allowed_countries: ['US', 'CA', 'KE']
                 },
+                shipping_options: [{ shipping_rate: "shr_1LXo6vHyk27VByqGqNWdDLUJ" }],
                 line_items: req.body.map(item => {
                     return {
                         price_data: {
-                            currency: "usd",
+                            currency: "kes",
                             product_data: {
                                 name: item.Title,
                                 images: [item.Image.data.attributes.formats.thumbnail.url]
                             },
-                            unit_amount: item.price * 100,
+                            unit_amount: item.Price * 100,
+                        },
+                        adjustable_quantity: {
+                            enabled: true,
+                            minimum: 1
                         },
                         quantity: item.quantity
                     };

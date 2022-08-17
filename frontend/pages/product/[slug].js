@@ -29,7 +29,7 @@ export default function ProductDetails() {
             <ProductInfo>
                 <h2>{Title}</h2>
                 <p>{Description}</p>
-                <h3>KSH {Price}</h3>
+                <h3>KES {Price}</h3>
                 <Quantity>
                     <span>Quantity</span>
                     <button>

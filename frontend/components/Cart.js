@@ -47,8 +47,8 @@ export default function Cart() {
         const stripe = await getStripe();
         const response = await fetch("/api/stripe", {
             method: "POST",
-            headers: {"Content-Type" : "application/json"},
-            body: JSON.stringify(cartItems)
+            headers: { "Content-Type": 'application/json' },
+            body: JSON.stringify(cartItems),
         });
         const data = await response.json();
         await stripe.redirectToCheckout({ sessionId: data.id });
@@ -90,7 +90,7 @@ export default function Cart() {
                                 <img src={item.Image.data.attributes.formats.thumbnail.url} alt={item.Title} />
                                 <CardInfo>
                                     <h3>{item.Title}</h3>
-                                    <h3>KSH {item.Price}</h3>
+                                    <h3>KES {item.Price}</h3>
                                     <Quantity>
                                         <span>Quantity</span>
                                         <button>
@@ -109,7 +109,7 @@ export default function Cart() {
                 </Cards>
                 {cartItems.length >= 1 && (
                     <CheckOut>
-                        <h3>SubTotal: KSH {totalPrice}</h3>
+                        <h3>SubTotal: KES {totalPrice}</h3>
                         <button onClick={handlecheckout}>Purchase</button>
                     </CheckOut>
                 )}

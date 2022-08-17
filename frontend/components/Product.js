@@ -14,7 +14,7 @@ export default function Product({ product }) {
             </Link>
             <div>
                 <h2>{Title}</h2>
-                <p>KSH {Price}</p>
+                <p>KES {Price}</p>
             </div>
         </ProductStyle>
     )
