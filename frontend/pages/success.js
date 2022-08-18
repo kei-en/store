@@ -19,7 +19,11 @@ export default function Success({ order }) {
 
     return (
         <Wrapper>
-            <Card>
+            <Card
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.75 }}
+            >
                 <h1>Thank you for your order!</h1>
                 <h2>A confirmation email will be sent to</h2>
                 <h2>{order.customer_details.email}</h2>
