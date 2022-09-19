@@ -1,0 +1,23 @@
+{
+  "kind": "singleType",
+  "collectionName": "latest_videos",
+  "info": {
+    "singularName": "latest-video",
+    "pluralName": "latest-videos",
+    "displayName": "Latest Video"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "videofile": {
+      "allowedTypes": [
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}
