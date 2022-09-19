@@ -15,7 +15,11 @@
     "Name": {
       "type": "string",
       "required": true,
+<<<<<<< HEAD
       "unique": true
+=======
+      "unique": false
+>>>>>>> origin/main
     },
     "Artist": {
       "type": "text",
@@ -39,6 +43,7 @@
       ]
     },
     "Album": {
+<<<<<<< HEAD
       "type": "string",
       "default": "None",
       "required": true
@@ -47,6 +52,9 @@
       "type": "uid",
       "required": true,
       "targetField": "Name"
+=======
+      "type": "string"
+>>>>>>> origin/main
     }
   }
 }

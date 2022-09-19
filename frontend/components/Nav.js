@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { FaShoppingBag } from 'react-icons/fa';
+<<<<<<< HEAD
 import Cart from './shop/Cart';
 import { useStateContext } from '../lib/context';
 import { useUser } from '@auth0/nextjs-auth0';
@@ -10,12 +11,20 @@ import { RiCloseFill } from "react-icons/ri";
 import { BsThreeDotsVertical } from "react-icons/bs";
 import logo from '../img/fishbowl.png';
 import Image from 'next/image';
+=======
+import { NavStyles, NavItems } from '../styles/NavStyles';
+import Cart from './Cart';
+import { useStateContext } from '../lib/context';
+import { useUser } from '@auth0/nextjs-auth0';
+import User from "../components/User"
+>>>>>>> origin/main
 
 const { AnimatePresence, motion } = require("framer-motion");
 
 export default function Nav() {
     const {showCart, setShowCart, totalQuantities} = useStateContext();
     const { user, error, isLoading } = useUser();
+<<<<<<< HEAD
 
     if(isLoading) return <p>Loading...</p>
     if(error) return <p>Oh no... {error.message}</p>
@@ -113,3 +122,27 @@ const StyledLinks = styled.div`
         }
     }
 `;
+=======
+    console.log(user)
+    
+    return (
+        <NavStyles>
+            <Link href={"/"}>logo</Link>
+            <NavItems>
+                <User />
+                <div onClick={() => setShowCart(true)}>
+                    {totalQuantities > 0 && 
+                    <motion.span
+                        initial={{ scale: 0 }}
+                        animate={{ scale: 1 }}
+                    >{totalQuantities}</motion.span>
+                    }
+                    <FaShoppingBag />
+                    <h3>Cart</h3>
+                </div>
+            </NavItems>
+            <AnimatePresence>{showCart && <Cart />}</AnimatePresence>
+        </NavStyles>
+    )
+}
+>>>>>>> origin/main

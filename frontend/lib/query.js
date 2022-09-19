@@ -40,4 +40,34 @@ export const GET_PRODUCT_QUERY = `
             }
         }
     }
+<<<<<<< HEAD
+=======
+`;
+
+export const SONG_QUERY = `
+    query{
+        songs {
+            data {
+                attributes {
+                    Name
+                    Artist
+                    Cover {
+                        data {
+                            attributes {
+                                formats
+                            }
+                        }
+                    }
+                    AudioFile {
+                        data {
+                            attributes {
+                                url
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+>>>>>>> origin/main
 `;
