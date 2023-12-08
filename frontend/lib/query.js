@@ -40,8 +40,6 @@ export const GET_PRODUCT_QUERY = `
             }
         }
     }
-<<<<<<< HEAD
-=======
 `;
 
 export const SONG_QUERY = `
@@ -69,5 +67,4 @@ export const SONG_QUERY = `
             }
         }
     }
->>>>>>> origin/main
 `;
