@@ -17,19 +17,24 @@ export default function User() {
         )
         return (
             <Profile onClick={() => route.push("/profile")}>
-                <img src={user.profile} alt={user.name} />
-                <h3>{user.name}</h3>
+                <img src={user.picture} alt={user.name} />
+                <h3>{user.nickname}</h3>
             </Profile>
         )
 }
 
 const Profile = styled.div`
+    display: inline-flex;
+    justify-content: space-evenly;
     img {
-        width: 1.2rem;
-        height: 1.2rem;
+        width: 3.5rem;
+        height: 3.5rem;
         border-radius: 50%;
+        align-self: center;
+        padding: 0.5rem;
     }
     h3 {
+        font-size: 2rem;
         padding: 0.5rem;
     }
 `;
