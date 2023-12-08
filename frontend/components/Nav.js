@@ -14,13 +14,12 @@ import Image from "next/image";
 const { AnimatePresence, motion } = require("framer-motion");
 
 export default function Nav() {
+  const [menuStatus, setMenuStatus] = useState(true);
   const { showCart, setShowCart, totalQuantities } = useStateContext();
   const { user, error, isLoading } = useUser();
 
   if (isLoading) return <p>Loading...</p>;
   if (error) return <p>Oh no... {error.message}</p>;
-
-  const [menuStatus, setMenuStatus] = useState(true);
 
   let activeStyle = {
     color: "#A68D60",
