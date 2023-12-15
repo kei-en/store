@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { useQuery } from "urql";
-import Product from "../components/shop/Product";
+import Product from "../components/Product";
 import { PRODUCT_QUERY } from "../lib/query";
 import { Gallery } from "../styles/Gallery";
 
@@ -22,7 +22,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
+      <main className="my-16">
         <Gallery>
           {products.map((product) => (
             <Product key={product.attributes.Slug} product={product} />
