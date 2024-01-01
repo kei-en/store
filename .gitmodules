@@ -1,3 +1,5 @@
 [submodule "store-backend"]
 	path = store-backend
 	url = https://github.com/kei-en/store-backend.git
+[submodule "DbConnector"]
+	branch = main
