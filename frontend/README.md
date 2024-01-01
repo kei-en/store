@@ -1,35 +1,35 @@
 # Frontend
 
-This project uses Graphql to fetch product information from the backend, while Next.js's built-in REST API is used to connect to OAuth for account information and Stripe for transactions.
+This submodule project handles the shop part of the web app. It utilizes GraphQL to fetch product information from the backend. Additionally, Next.js's built-in REST API is employed to connect to OAuth for account information and Stripe for transactions.
 
 <div align="start" style="display: flex; flex-wrap: wrap; justify-content: space-around; margin: 2rem;">
     <img src="./public/store-home.png"
-        alt="hbnb logo"
+        alt="image of store homepage"
         width="300"
         style="margin: 1rem;"
     >
     <img src="./public/store-empty-cart.png"
-        alt="hbnb logo"
+        alt="image of store's empty cart"
         width="300"
         style="margin: 1rem;"
     >
     <img src="./public/store-add-to-cart.png"
-        alt="hbnb logo"
+        alt="image of product description"
         width="300"
         style="margin: 1rem;"
     >
     <img src="./public/store-cart.png"
-        alt="hbnb logo"
+        alt="image of cart with a product"
         width="300"
         style="margin: 1rem;"
     >
     <img src="./public/store-payment-info.png"
-        alt="hbnb logo"
+        alt="image of payment info page"
         width="300"
         style="margin: 1rem;"
     >
     <img src="./public/store-order-history.png"
-        alt="hbnb logo"
+        alt="image of order history page"
         width="300"
         style="margin: 1rem;"
     >
