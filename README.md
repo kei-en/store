@@ -17,8 +17,8 @@ The frontend is bootstrapped with create-next-app. It fetches data from the back
 
 The backend is built using Strapi and is connected to a PostgreSQL database. It provides an admin panel for managing products on the main site.
 
-Backend Directory: [store-backend](./store-backend/)
-Backend README: [Backend Readme](./store-backend/README.md)
+- Backend Directory: [store-backend](./store-backend/)
+- Backend README: [Backend Readme](./store-backend/README.md)
 
 ## Installation
 
