@@ -18,7 +18,7 @@ The frontend is bootstrapped with create-next-app. It fetches data from the back
 The backend is built using Strapi and is connected to a PostgreSQL database. It provides an admin panel for managing products on the main site.
 
 - Backend Directory: [store-backend](https://github.com/kei-en/store-backend)
-- Backend README: [Backend Readme](https://github.com/kei-en/store-backend/README.md)
+- Backend README: [Backend Readme](https://github.com/kei-en/store-backend/blob/main/README.md)
 
 ## Installation
 
