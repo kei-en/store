@@ -17,8 +17,8 @@ The frontend is bootstrapped with create-next-app. It fetches data from the back
 
 The backend is built using Strapi and is connected to a PostgreSQL database. It provides an admin panel for managing products on the main site.
 
-- Backend Directory: [store-backend](./store-backend/)
-- Backend README: [Backend Readme](./store-backend/README.md)
+- Backend Directory: [store-backend](https://github.com/kei-en/store-backend)
+- Backend README: [Backend Readme](https://github.com/kei-en/store-backend/README.md)
 
 ## Installation
 
@@ -29,14 +29,14 @@ Navigate into the directory: cd store
 Install dependencies for both frontend and backend:
 
 - [Frontend Installation](./frontend#installation)
-- [Backend Installation](./store-backend#installation)
+- [Backend Installation](https://github.com/kei-en/store-backend#installation)
 
 ## Usage
 
 Ensure both the frontend and backend are running simultaneously. Follow the instructions in the respective README files for details:
 
 - [Frontend Usage](./frontend#usage)
-- [Backend Usage](./store-backend#usage)
+- [Backend Usage](https://github.com/kei-en/store-backend#usage)
 
 ## Related Projects
 
